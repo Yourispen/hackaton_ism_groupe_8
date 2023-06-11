@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ConnexionRoutingModule } from './connexion-routing.module';
 import { ConnexionComponent } from './liste/connexion.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ConnexionComponent } from './liste/connexion.component';
   ],
   imports: [
     CommonModule,
-    ConnexionRoutingModule
+    ConnexionRoutingModule,
+    FormsModule
   ]
 })
 export class ConnexionModule { }
