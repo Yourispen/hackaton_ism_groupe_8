@@ -7,10 +7,10 @@ import { HeaderComponent } from './template/layouts/header/header.component';
 import { FooterComponent } from './template/layouts/footer/footer.component';
 import { LayoutsModule } from './template/layouts/layouts.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,

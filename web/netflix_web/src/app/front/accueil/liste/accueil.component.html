@@ -1,24 +1,22 @@
 
-<div class="row image-container">
-  <img
-    src="assets/images/Citadel.jpeg"
-    alt="Image"
-    width="100%"
-    height="20%"
-  />
+<div class="row image-container" style="position: relative;">
+  <img src="assets/images/Citadel.jpeg" alt="Image" width="100%" height="20%" />
   <div class="texte-sur-image m-5">
 
     <div class="row">
-      <div class="col col-md-3"> 
+      <div class="col col-md-3">
         <p style="font-size: 30px;color: white;letter-spacing: 10px;">
-          <img src="https://loodibee.com/wp-content/uploads/Netflix-N-Symbol-logo.png" alt="" width="50" height="60"> 
-          series</p>
+          <img src="https://loodibee.com/wp-content/uploads/Netflix-N-Symbol-logo.png" alt="" width="50" height="60">
+          series
+        </p>
       </div>
       <div class="col col-md-9"></div>
 
     </div>
     <div class="row">
-      <div class="col col-md-3"><p style="font-size: 100px;color: white;letter-spacing: 30px">CITADEL</p></div>
+      <div class="col col-md-3">
+        <p style="font-size: 100px;color: white;letter-spacing: 30px">CITADEL</p>
+      </div>
       <div class="col col-md-9"></div>
     </div>
     <div class="row">
@@ -26,12 +24,15 @@
       <div class="col col-md-9"></div>
     </div>
     <div class="row" style="margin-bottom: 50px;">
-      <div class="col col-md-5" style="color:white">l y a huit ans, Citadel tombait. L'agence d'espionnage internationale et indépendante - chargée de maintenir la sûreté et la sécurité de tous - a été détruite par des agents de Manticore, un puissant syndicat tirant les ficelles dans l'ombre.</div>
+      <div class="col col-md-5" style="color:white">l y a huit ans, Citadel tombait. L'agence d'espionnage
+        internationale et indépendante - chargée de maintenir la sûreté et la sécurité de tous - a été détruite par des
+        agents de Manticore, un puissant syndicat tirant les ficelles dans l'ombre.</div>
       <div class="col col-md-7"></div>
-      
+
     </div>
     <div class="row">
-      <div class="col col-md-3"><a (click)="goToPlay()" class="btn" style="background-color: #ffffff;padding-left: 50px;"><b>Lire</b></a></div>
+      <div class="col col-md-3"><a (click)="goToPlay()" class="btn"
+          style="background-color: #ffffff;padding-left: 50px;"><b>Lire</b></a></div>
       <div class="col col-md-9"></div>
     </div>
 
@@ -60,806 +61,88 @@
   </div>
   <div class="row" class="m-3">
     <h5>Tendance actuelle</h5>
-<!-- -----------caroucelle----------- -->
-<div class="container-fluid slide2">
-  <section class="d-flex justify-content-between margin-right margin-title">
-    <p class="text-white"><b>Hollywood</b></p>
-    <div class="">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="0"
-        class="active tab-change-btn"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        class="tab-change-btn"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        class="tab-change-btn"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-    </div>
-  </section>
-  <div
-    id="carouselExampleIndicators"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
-    <div
-      class="carousel-inner"
-      style="position: relative; overflow: visible"
-    >
-      <div class="carousel-item active">
-        <section class="d-flex">
-
-
-          <div class="card" *ngFor="let f of allfilms">
-            <div *ngIf="f.categorie=='tendanceActuelle'">
-              <img
-              src="{{f.photo}}"
-              class="card-img-top"
-              alt="..."
-              width="315px"
-              height="400px"
-            />
-            </div>
-            
+    <swiper-container swiper>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-container d-flex justify-content-between">
+            <img src="assets/images/Netflix/A venir/Aquaman et le Royaume perdu .jpeg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/A venir/Equalizer 3 .jpeg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/A venir/Indiana Jones et le Cadran de la destinée .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/A venir/The Flash .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/A venir/Transformers- Rise of the Beasts .jpg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/A venir/Tyler Rake 2 .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
           </div>
-
-
-        </section>
+        </div>
       </div>
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
-<!-- ------------------------ -->
+    </swiper-container>
   </div>
 
 
   <div class="row" class="m-3">
     <h5>Au cinéma</h5>
-    <!-- -----------caroucelle----------- -->
-    <div class="container-fluid slide2">
-      <section class="d-flex justify-content-between margin-right margin-title">
-        <p class="text-white"><b>Hollywood</b></p>
-        <div class="">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active tab-change-btn"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-      </section>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div
-          class="carousel-inner"
-          style="position: relative; overflow: visible"
-        >
-          <div class="carousel-item active">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-            
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-            </section>
+    <swiper-container swiper>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-container d-flex justify-content-between">
+            <img src="assets/images/Netflix/Au Cinéma/2783447.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/exorciste.webp" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/Fast.jpeg" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/Les Gardiens de la Galaxie Vol. 3 .avif" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/Luther.webp" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/movie_uuid=1674B132-9ECE-4A53-8B09-D8BDE7CC4EE2.avif" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/movie_uuid=1674B132-9ECE-4A53-8B09-D8BDE7CC4EE2.avif" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/Renfield.webp" class="card-img-top m-1" alt="..." width="400px" height="600px" />
+            <img src="assets/images/Netflix/Au Cinéma/spider man.jpeg" class="card-img-top m-1" alt="..." width="400px" height="600px" />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-    <!-- ------------------------ -->
+    </swiper-container>
   </div>
 
 
   <div class="row" class="m-3">
     <h5>Arrive Bientot</h5>
-    <!-- -----------caroucelle----------- -->
-    <div class="container-fluid slide2">
-      <section class="d-flex justify-content-between margin-right margin-title">
-        <p class="text-white"><b>Hollywood</b></p>
-        <div class="">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active tab-change-btn"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-      </section>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div
-          class="carousel-inner"
-          style="position: relative; overflow: visible"
-        >
-          <div class="carousel-item active">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
+    <swiper-container swiper>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-container d-flex justify-content-between">
+            <img src="assets/images/Netflix/Tendance/0906480.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/alibi_com_2.jpeg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/ant_man_et_la_guepe_quantumania.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/asterix_obelix_l_empire_du_milieu.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/asterix_obelix_l_empire_du_milieu.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/L_Éléphante du magicien .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/The mother.jpg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/tirailleurs.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Tendance/We Have a Ghost .jpeg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
 
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-            
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-            </section>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-    <!-- ------------------------ -->
+    </swiper-container>
   </div>
 
 
 
   <div class="row" class="m-3">
     <h5>Animation</h5>
-    <!-- -----------caroucelle----------- -->
-    <div class="container-fluid slide2">
-      <section class="d-flex justify-content-between margin-right margin-title">
-        <p class="text-white"><b>Hollywood</b></p>
-        <div class="">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active tab-change-btn"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            class="tab-change-btn"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-      </section>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div
-          class="carousel-inner"
-          style="position: relative; overflow: visible"
-        >
-          <div class="carousel-item active">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-            
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section class="d-flex">
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-                
-              </div>
-              <div class="card">
-                <img
-                  src="assets/images/Equalizer3.jpeg"
-                  class="card-img-top"
-                  alt="..."
-                  width="315px"
-                  height="400px"
-                />
-              </div>
-            </section>
+    <swiper-container swiper>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-container d-flex justify-content-between">
+            <img src="assets/images/Netflix/Animation/Demon slayer.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Animation/Jujutsu kaisen 0.webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Animation/Miraculous, le film .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Animation/Pretty Guardian Sailor Moon Cosmos The Movie .jpg" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Animation/Sacrées Momies .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
+            <img src="assets/images/Netflix/Animation/Super Mario Bros. le film .webp" class="card-img-top m-1" alt="..." width="315px" height="400px" />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
+    </swiper-container>
+
+
+
     <!-- ------------------------ -->
   </div>
 </div>

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { FilmService } from '../../../shared/service/film.service';
 import { Film } from 'src/app/shared/model/film';
 
+
+
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
