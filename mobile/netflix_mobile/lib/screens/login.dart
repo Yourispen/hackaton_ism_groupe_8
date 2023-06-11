@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
               Text(
                 "Se Connecter",
                 style: GoogleFonts.roboto(
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w200,
                   color: Colors.white,
                   fontSize: 40,
                 ),
@@ -118,7 +118,7 @@ class _LoginState extends State<Login> {
               Text(
                 "Besoin d'aide ?",
                 style: GoogleFonts.roboto(
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w200,
                   color: Colors.white,
                   fontSize: 15,
                 ),
@@ -130,7 +130,7 @@ class _LoginState extends State<Login> {
                   Text(
                     "Nouveau sur Netflix ?",
                     style: GoogleFonts.roboto(
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w200,
                       color: Colors.white,
                       fontSize: 15,
                     ),
