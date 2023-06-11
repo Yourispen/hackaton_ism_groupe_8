@@ -10,12 +10,12 @@ class Bg extends StatelessWidget {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset(
+        /* Image.asset(
           Config.assets.background,
           fit: BoxFit.fill,
-        ),
+        ), */
         Container(
-          color: Colors.black.withOpacity(.72),
+          color: Colors.black,
         ),
         SafeArea(
           child: child,

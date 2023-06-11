@@ -35,7 +35,7 @@ class ContentHeader extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 110.0,
+          bottom: 210.0,
           child: SizedBox(
             width: 250.0,
             child: Image.asset(featuredContent.titleImageUrl!),
@@ -64,19 +64,33 @@ class _PlayButton extends StatelessWidget {
   );
   @override
   Widget build(BuildContext context) {
-    return TextButton.icon(
+    return Column(
+      children: [const SizedBox(height: 30),TextButton.icon(
       style: flatButtonStyle,
       onPressed: () {
                       Navigator.pushNamed(context, "/play");
                     },
-      icon: const Icon(Icons.play_arrow, size: 30.0),
+      icon: const Icon(Icons.play_arrow, size: 50.0),
       label: const Text(
-        'Lire',
+        'Lecture',
         style: TextStyle(
           fontSize: 16.0,
           fontWeight: FontWeight.w600,
         ),
       ),
-    );
+    ),const SizedBox(height: 30),TextButton.icon(
+      style: flatButtonStyle,
+      onPressed: () {
+                      Navigator.pushNamed(context, "/play");
+                    },
+      icon: const Icon(Icons.play_arrow, size: 50.0),
+      label: const Text(
+        'Télécharger',
+        style: TextStyle(
+          fontSize: 16.0,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    )]);
   }
 }

@@ -22,41 +22,41 @@ class _LoginState extends State<Login> {
     return Scaffold(
       body: Bg(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
-          padding: EdgeInsets.symmetric(
+          physics: const BouncingScrollPhysics(),
+          padding: const EdgeInsets.symmetric(
             horizontal: 30,
           ),
           child: Column(
             children: [
-              SizedBox(height: 30),
-              Image.asset(
+              const SizedBox(height: 150),
+              /* Image.asset(
                 Config.assets.logo,
                 width: 250,
-              ),
-              SizedBox(height: 25),
+              ), */
+              const SizedBox(height: 25),
               Text(
-                "Login",
+                "Se Connecter",
                 style: GoogleFonts.roboto(
                   fontWeight: FontWeight.w700,
                   color: Colors.white,
                   fontSize: 40,
                 ),
               ),
-              SizedBox(height: 25),
-              NTextField(
-                label: "Email",
-                hint: "Email address",
+              const SizedBox(height: 25),
+              const NTextField(
+                label: "",
+                hint: "Email ou numero de telephone",
               ),
-              SizedBox(height: 17),
-              NTextField(
-                label: "Password",
-                hint: "Password",
+              const SizedBox(height: 17),
+              const NTextField(
+                label: "",
+                hint: "Mot de passe",
                 isPassword: true,
               ),
-              SizedBox(height: 17),
-              Row(
+              const SizedBox(height: 17),
+              /*  Row(
                 children: [
-                  Expanded(
+                   Expanded(
                     child: Row(children: [
                       CupertinoSwitch(
                         thumbColor: Colors.white,
@@ -68,19 +68,12 @@ class _LoginState extends State<Login> {
                         },
                         activeColor: Config.colors.primaryColor,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
-                      Text(
-                        "Remember me",
-                        style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white.withOpacity(.46),
-                          fontSize: 13,
-                        ),
-                      )
+                     
                     ]),
-                  ),
+                  ), 
                   Text(
                     "forgot password?",
                     style: GoogleFonts.roboto(
@@ -90,21 +83,24 @@ class _LoginState extends State<Login> {
                     ),
                   )
                 ],
-              ),
-              SizedBox(height: 17),
+              ), */
+              const SizedBox(height: 17),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   NButton(
-                    title: "Login",
-                    onPressed: () {},
+                    title: "Se connecter",
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/home");
+                    },
+                    color: Colors.red[900],
                   ),
                 ],
               ),
-              SizedBox(height: 40),
-              Or(),
-              SizedBox(height: 30),
-              Row(
+              //const SizedBox(height: 40),
+              //const Or(),
+              //const SizedBox(height: 30),
+              /* Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset(
@@ -117,13 +113,22 @@ class _LoginState extends State<Login> {
                     Config.assets.facebook,
                   ),
                 ],
+              ), */
+              const SizedBox(height: 40),
+              Text(
+                "Besoin d'aide ?",
+                style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                  fontSize: 15,
+                ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "don’t have an account?",
+                    "Nouveau sur Netflix ?",
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.w700,
                       color: Colors.white,
@@ -131,9 +136,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {
-                      Config.navigate(context, Register());
-                    },
+                    onPressed: () {},
                     child: Text(
                       "sign up",
                       style: GoogleFonts.roboto(

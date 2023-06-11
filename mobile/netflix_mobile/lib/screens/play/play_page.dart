@@ -5,17 +5,17 @@ import 'package:netflix_mobile/cubits/cubits.dart';
 //import 'package:netflix_mobile/widgets/previews.dart';
 
 import '../../data/data.dart';
-import '../../widgets/content_header.dart';
+import '../../widgets/play_header.dart';
 import '../../widgets/content_list.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class PlayPage extends StatefulWidget {
+  const PlayPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<PlayPage> createState() => _PlayPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _PlayPageState extends State<PlayPage> {
   ScrollController? _scrollController;
 
   @override
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ), */
-           SliverToBoxAdapter(
+           /* SliverToBoxAdapter(
             child: ContentList(
               key: PageStorageKey('myList'),
               title: 'Tendances actuelles',
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )
-        ],
+         */],
       ),
     );
   }

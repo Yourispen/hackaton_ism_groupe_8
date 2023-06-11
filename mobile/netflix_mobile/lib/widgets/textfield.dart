@@ -19,7 +19,7 @@ class NTextField extends StatelessWidget {
             label!,
             style: GoogleFonts.roboto(
               fontWeight: FontWeight.w700,
-              color: Colors.white,
+              color: Colors.red,
               fontSize: 19,
             ),
           ),
@@ -33,7 +33,7 @@ class NTextField extends StatelessWidget {
               ),
               hintText: hint,
               filled: true,
-              fillColor: Colors.white,
+              fillColor: Colors.grey[700],
               suffixIcon: isPassword
                   ? IconButton(
                       onPressed: () {},
