@@ -6,12 +6,14 @@ class ContentList extends StatelessWidget {
   final String title;
   final List<Content> contentList;
   final bool isOriginals;
+  final bool isGalerie;
 
   const ContentList({
     Key? key,
     required this.title,
     required this.contentList,
     this.isOriginals = false,
+    this.isGalerie=false,
   }) : super(key: key);
 
   @override
@@ -47,8 +49,8 @@ class ContentList extends StatelessWidget {
                   onTap: () => print(content.name),
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 8.0),
-                    height: isOriginals ? 400.0 : 200.0,
-                    width: isOriginals ? 300.0 : 130.0,
+                    height: isOriginals ? 400.0 : (isGalerie?100: 200.0),
+                    width: isOriginals ? 300.0 : (isGalerie?300: 130.0),
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(content.imageUrl),

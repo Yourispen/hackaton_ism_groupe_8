@@ -68,21 +68,21 @@ class _PlayPageState extends State<PlayPage> {
               ),
             ),
           ), */
-           /* SliverToBoxAdapter(
+            SliverToBoxAdapter(
             child: ContentList(
               key: PageStorageKey('myList'),
-              title: 'Tendances actuelles',
+              title: 'CASTING',
               contentList: myList,
             ),
           ),
            SliverToBoxAdapter(
             child: ContentList(
               key: PageStorageKey('originals'),
-              title: 'Au cinéma',
+              title: 'Galérie',
               contentList: originals,
-              isOriginals: true,
+              isGalerie: true,
             ),
-          ),
+          ),/*
            SliverPadding(
             padding: EdgeInsets.only(bottom: 20.0),
             sliver: SliverToBoxAdapter(
